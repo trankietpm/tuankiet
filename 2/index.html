@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="utf 8">
+        <title>invooce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+         body {font-family: Arial, Helvetica, sans-serif;line-height: 1.6;
+               font-size: 16px;}
+        h1{font-size: 25px;}
+         h2{font-size: 12px;font-weight: 100;}
+         .login{transition: background-color .3s, box-shadow .3s;
+            padding: 12px 16px 12px 42px;
+             border: none;
+            border-radius: 3px;
+            box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25)}
+         .google{ color: #000;text-decoration: none;margin-left: 70px;}
+         .or{ font-weight: 100;color: #b2b2b2;text-align: center;margin-top: 30px;}  
+         input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;}
+         button {
+            background-color: #0000ff;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%; }
+         button:hover {
+            opacity: 0.8; }
+        .container a{text-decoration: none;margin-left: 130px;color: #0909f4;font-size: 16px;}
+        .end{margin-top: 20px;text-align: center;}
+        .end a{text-decoration: none;color: #0909f4}
+        @media screen and ( min-width : 600px){
+           form{max-width: 23%; float: right;margin-right: 40%;}
+           .image{min-width: 5%;margin-left: 20%;;margin-bottom: 5%;}
+            h1{margin-bottom: 0.05%;}
+        }
+        </style>
+    </head>
+    <body>
+        <section class="service">
+            <p class="image"><img src="./images/invooce.gif"></p>
+            <form>
+                <h1>Login</h1>
+                <h2>Hi, Welcome back 👋</h2>
+                <div class="Login"> <a class="Google" href="."><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Login with Google</a> </div>
+                <p class="or">-------------------- or Login with Email --------------------</p>
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input  id="emailAddress" type="text" placeholder="jonhdoe@email.com" name="uname" required >
+    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Your Password" name="psw" required>
+                        
+                    <label><input type="checkbox" checked="checked" name="remember"> Remember me </label>
+                    <a href=".">Forgot Password?</a>
+                    <button type="submit">Login</button>
+                  </div>
+                 
+                <div class="end">
+                    <label for="register">Not registered yet <a href=".">Create an account ↗</a></label>
+                </div>
+              </form>
+        </section>
+    </body>
+</html>
