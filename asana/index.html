@@ -5,14 +5,30 @@
       <script src="https://kit.fontawesome.com/8731ed573c.js" crossorigin="anonymous"></script>
       <style>
         body {font-family: Arial, Helvetica, sans-serif;line-height: 1.6;
-               font-size: 16px; background-color: #fff;max-width: 2000px; overflow-x: hidden}
-         .profile{float: left;margin-top: 50px ;max-width: 300px;}
+               font-size: 16px; background-color: #fff;max-width: 2000px; overflow-x: hidden;width: 100%;}
+        body{
+          display: grid;    
+          grid-template-columns: repeat(12, 1fr);
+        }
+        .start{
+          grid-column: span 12;
+        }
+        .profile{
+          grid-column: span 2;
+        }
+        .center{
+          grid-column: span 9;
+        }
+        .final{
+          grid-column: span 1;
+        }
+         .profile{margin-top: 50px ;}
          .profile h1,h2,h3,.task{margin-left: 50px;}
          h2{margin-top: -30px;font-size: 17px;color: #666;}
          .profile h3,.task{font-size: 20px;line-height: 1;}
          .task{color: #b2b2b2;}
          .topic{font-size: 16px;font-weight: bold;color: #999;}
-         .center{float:left ;margin-top: 50px;margin-left: 100px ;width: 900px;}
+         .center{ margin-top: 50px;margin-left: 50px}
           .time i{margin-right: 10px;}
           .product,.network,.testing,.audit,.bug{ 
                 padding: 5px ;
@@ -57,7 +73,7 @@
         }
       .team{margin-top: 50px;}
       .recent i{ margin-right: 10px;}
-      .final{float: right;max-width: 350px;margin-top: 50px} 
+      .final{margin-top: 50px} 
       .infor{font-size: 14px;color: #b2b2b2;font-weight: 600;}
       .direct a{color: #fff;
                 display: inline-block;
@@ -69,9 +85,10 @@
                 text-align: center;
                 text-decoration: none;
                 transition: 0.3s background-color;}
-     .direct .security a{background-color: #56aaff; width: 100px;float: left;}
-     .direct .encryption a{background-color: #bf00bf; width: 120px; margin-left: 20px;}
-     .direct .keys a{background-color: #bfbf00; width: 200px;margin-top: -5px;}
+     .direct a{  width: 100%;}
+     .direct .security a{background-color: #56aaff; width: 30%; float: left ;margin-right: 20px;}
+     .direct .encryption a{background-color: #bf00bf;width: 30%;}
+     .direct .keys a{background-color: #bfbf00; width: 50%;}
      .request {margin-top: 400px;}
      input[type="text"]{width: 350px;background-color: #fff;
                         border-radius: 25px;
