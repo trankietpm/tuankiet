@@ -1,0 +1,92 @@
+body {font-family: Arial, Helvetica, sans-serif;line-height: 1.6;
+    font-size: 16px; background-color: #fff;max-width: 2000px; overflow-x: hidden;width: 100%;}
+body{
+display: grid;    
+grid-template-columns: repeat(12, 1fr);
+}
+.start{
+grid-column: span 12;
+}
+.grid-container {
+     display: grid;
+     grid-template-columns: 1fr 2fr 9fr 1fr;
+     grid-gap: 20px;
+   }
+.profile{margin-top: 50px ;}
+.profile h1,h2,h3,.task{margin-left: 50px;}
+h2{margin-top: -30px;font-size: 17px;color: #666;}
+.profile h3,.task{font-size: 20px;line-height: 1;}
+.task{color: #b2b2b2;}
+.topic{font-size: 16px;font-weight: bold;color: #999;}
+.center{ margin-top: 50px;margin-left: 50px}
+.time i{margin-right: 10px;}
+.product,.network,.testing,.audit,.bug{ 
+     padding: 5px ;
+     background-color: #ccc;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;}
+.product{width: 800px;}
+.network{width: 600px;}
+.testing{width: 400px;}
+.audit{width: 300px;}
+.bug{width: 200px;}  
+
+.works-most-with { margin-top: 50px;margin-left: 20px;}
+
+.works-most-with h2 {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.works-most-with ul {
+list-style: none;
+padding: 0;
+}
+.works-most-with li {
+display: inline-block;
+width: 100px;
+text-align: center;
+margin-right: 20px;
+}
+.works-most-with li img {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+
+.works-most-with li p {
+font-size: 14px;
+margin: 0;
+}
+.team{margin-top: 50px;}
+.recent i{ margin-right: 10px;}
+.final{margin-top: 50px} 
+.infor{font-size: 14px;color: #b2b2b2;font-weight: 600;}
+
+.button-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.button-group .security {
+  margin-right: 5px;
+}
+
+.button-group .encryption {
+  margin-left: 5px;
+}
+      .request {margin-top: 400px;}
+           input[type="text"]{width: 350px;background-color: #fff;
+                    border-radius: 25px;
+                    height: 45px; 
+                    padding: 0 10px;}
+               
+          ::placeholder { 
+               color: #b2b2b2;
+               font-size: 17px;
+               
+               }
+          .request img{margin-top: 20px;}
